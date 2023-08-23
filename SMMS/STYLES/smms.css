@@ -1,0 +1,242 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+     font-family: 'Agnella Bold', sans-serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px;
+    background-color: white;
+   
+      
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+cursor: pointer;
+}
+
+.company-name {
+    font-family: 'Fascinate Inline';
+    font-size: 25px;
+    align-items: center;
+    color: green; 
+    text-shadow: 1px 1px 1px green; 
+    cursor: pointer;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.language img{
+    width: 20px;
+    border-radius: 50%;
+}
+
+.language-label {
+    font-size: 14px;
+    color: rgb(11, 4, 18);
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.icon-button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+.account-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.account-position {
+    font-size: 18px;
+    margin: 3em;
+}
+.user-profile{
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px green inset;
+    cursor: pointer;
+    
+}
+
+
+.content {
+    display: flex;
+    gap: 0px;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.sub-division {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 2px;
+}
+
+.menu-list {
+    list-style: none;
+    background-color: rgb(3, 15, 3);
+    color: white;
+    padding: 40px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.menu-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.menu-list i{
+    padding-right: 20px;
+    padding-right: 10px;
+}
+
+ .main-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 30%;
+   
+    margin-left: 20px;
+} 
+
+.main-image {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex: 100%; 
+    height: 100%; 
+}
+
+.main-image img {
+   height: 100%;
+   width: 100%;
+}
+
+
+.right-menu{
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.right-menu-content {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%; 
+    flex: 20%; 
+    height: 30vh; 
+}
+.right-menu-content i{
+    padding-right: 10px;
+    
+}
+.right-menu-content p{
+    cursor: pointer;
+}
+
+
+
+table {
+    width: auto;
+    border-collapse: collapse;
+    background-color: green;
+    color: white;
+    margin: 20px 0px 40px 0px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+
+.footer{
+    margin-top: 50px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+
+    .sub-division {
+        flex: auto; /* Expand sections to fill available height */
+        height: auto; /* Reset fixed height */
+    }
+    .menu{
+        margin-right: 40px;
+    }
+    .menu-list {
+        height: auto; /* Reset fixed height for menu */
+    }
+
+    .main-content,
+    .main-image,
+    .right-menu-content {
+        flex: 100%; /* Expand sections to full width on smaller screens */
+        height: auto; /* Reset fixed height */
+    
+    }
+    .right-menu{
+        margin-left: 20px;
+        margin-top: -20px;
+    }
+     .main-content{
+        margin-right: 40px;
+     }
+    .main-image img {
+        max-height: none; 
+    }
+}
+
+
